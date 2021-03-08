@@ -5,16 +5,16 @@
      As a user,  I want to learn how to automate  in screenplay at the Choucair Academy with the automation course
      @scenariol
      Scenario Outline: Search for a automation course
-       Given than brandon wants to learn automation at the academy Choucair
+       Given than Paola wants to learn automation at the academy Choucair
        | strUser   | strPassword  |
        | <strUser>    |<strPassword> |
-       When he search for the course Recursos Automatizacion Bancolombia on the choucair academy platform
+       When she search for the course on the choucair academy platform
        | strCourse                |
        | <strCourse> |
-       Then he finds the course called resources Recursos Automatizacion Bancolombia
+       Then she finds the course called
        | strCourse                |
        | <strCourse> |
 
        Examples:
        | strUser | strPassword  | strCourse |
-       | rpenaa  | Febrero.2020 | Metodologia Bancolombia |
+       | 1028008552  | Choucair2021* | Metodologia Bancolombia |

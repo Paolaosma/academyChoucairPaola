@@ -22,20 +22,20 @@ public class ChoucairAcademyStepDefinitions {
     public void setStage (){ OnStage.setTheStage(new OnlineCast()); }
 
 
-    @Given("^than brandon wants to learn automation at the academy Choucair$")
-    public void thanBrandonWantsToLearnAutomationAtTheAcademyChoucair(List<AcademyChoucairData> academyChoucairData) {
+    @Given("^than Paola wants to learn automation at the academy Choucair$")
+    public void thanPaolaWantsToLearnAutomationAtTheAcademyChoucair(List<AcademyChoucairData> academyChoucairData) {
         OnStage.theActorCalled("Paola").wasAbleTo(Openup.thePage(), (Login.OnThePage(academyChoucairData.get(0).getStrUser(),academyChoucairData.get(0).getStrPassword())));
 
     }
 
-    @When("^he search for the course on the choucair academy platform$")
-    public void heSearchForTheCourseRecursosAutomatizacionBancolombiaOnTheChoucairAcademyPlatform(List<AcademyChoucairData> academyChoucairData) {
+    @When("^she search for the course on the choucair academy platform$")
+    public void sheSearchForTheCourseOnTheChoucairAcademyPlatform(List<AcademyChoucairData> academyChoucairData) {
         OnStage.theActorInTheSpotlight().attemptsTo(Search.the(academyChoucairData.get(0).getStrCourse()));
 
     }
 
-    @Then("^he finds the course called resources $")
-    public void heFindsTheCourseCalledResourcesRecursosAutomatizacionBancolombia(List<AcademyChoucairData> academyChoucairData) {
+    @Then("^she finds the course called$")
+    public void heFindsTheCourseCalled(List<AcademyChoucairData> academyChoucairData) {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(academyChoucairData.get(0).getStrCourse())));
     }
 }

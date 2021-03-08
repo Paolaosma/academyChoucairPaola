@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Academy Choucair" skipped="1" tests="1" time="25.62" timestamp="2021-03-08 11:52:44"><testcase name="Search for a automation course"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Academy Choucair" skipped="0" tests="1" time="28.06" timestamp="2021-03-08 01:06:14"><testcase name="Search for a automation course"><error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=89.0.4389.82)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-PD0QNO9', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Paola\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51654}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a74568dfa2693e3f596876530d3469de&#10;*** Element info: {Using=xpath, value=//div[@id='universidad']//strong}" type="org.openqa.selenium.NoSuchWindowException">no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PD0QNO9', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Paola\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51654}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a74568dfa2693e3f596876530d3469de
+*** Element info: {Using=xpath, value=//div[@id='universidad']//strong}</error><system-err>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PD0QNO9', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Paola\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51654}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a74568dfa2693e3f596876530d3469de
+*** Element info: {Using=xpath, value=//div[@id='universidad']//strong}&#13;
+co.com.choucair.certification.proyectobasepaola.tasks.Search.performAs(Search.java:25)&#13;
+co.com.choucair.certification.proyectobasepaola.stepdefinitions.ChoucairAcademyStepDefinitions.sheSearchForTheCourseOnTheChoucairAcademyPlatform(ChoucairAcademyStepDefinitions.java:33)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

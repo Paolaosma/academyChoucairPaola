@@ -85,7 +85,82 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@3914c57f
+<pre>REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@1c6409c5
+
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/academyChoucair.feature:20 ?[0m# Search for a automation course
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
+0m28,915s
+
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PD0QNO9', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\Paola\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51654}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a74568dfa2693e3f596876530d3469de
+*** Element info: {Using=xpath, value=//div[@id='universidad']//strong}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
+	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:18)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:221)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1146)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:954)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1229)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$2x6h2HQW.performAs$accessor$ajUd5qHm(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$2x6h2HQW.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.certification.proyectobasepaola.tasks.Search.performAs(Search.java:25)
+	at co.com.choucair.certification.proyectobasepaola.tasks.Search$ByteBuddy$tmF8WE9n.performAs$accessor$EfEBRCTW(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:471)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:451)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:424)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:75)
+	at co.com.choucair.certification.proyectobasepaola.tasks.Search$ByteBuddy$tmF8WE9n.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at co.com.choucair.certification.proyectobasepaola.stepdefinitions.ChoucairAcademyStepDefinitions.sheSearchForTheCourseOnTheChoucairAcademyPlatform(ChoucairAcademyStepDefinitions.java:33)
+	at ?.she search for the course on the choucair academy platform(src/test/resources/features/academyChoucair.feature:11)
+
 </pre>
 </span>
 </div>
@@ -121,7 +196,8 @@
 
 TEST STARTED: Search for a automation course
 -------------------------------------------------------------------(academy-choucair;search-for-a-automation-course)
-[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6db6e757
+[Test worker] WARN net.thucydides.core.steps.BaseStepListener - stepStarted: net.thucydides.core.steps.ExecutedStepDescription@6da2a440
+[pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 </pre>
 </span>
 </div>
@@ -133,7 +209,7 @@ TEST STARTED: Search for a automation course
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 8/03/2021, 12:09:56 p. m.</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 8/03/2021, 1:06:48 p. m.</p>
 </div>
 </div>
 </body>

@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 08-03-2021 11:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 08-03-2021 13:06</span>
     <br style="clear:left"/>
 </div>
 
@@ -179,9 +179,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon fa-2x' title='PENDING'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="pending-color">Search for a automation course
+                                <span class="error-color">Search for a automation course
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -197,29 +197,68 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given than brandon wants to learn automation at the academy Choucair<br><table class='embedded'><thead><th>strUser</th><th>strPassword</th></thead><tbody><tr><td>&lt;strUser&gt;</td><td>&lt;strPassword&gt;</td></tr></tbody></table><br>When he search for the course Recursos Automatizacion Bancolombia on the choucair academy platform<br><table class='embedded'><tbody><tr><td>strCourse</td></tr><tr><td>&lt;strCourse&gt;</td></tr></tbody></table><br>Then he finds the course called resources Recursos Automatizacion Bancolombia<br><table class='embedded'><tbody><tr><td>strCourse</td></tr><tr><td>&lt;strCourse&gt;</td></tr></tbody></table></div>
+        <div class="scenario">Given than Paola wants to learn automation at the academy Choucair<br><table class='embedded'><thead><th>strUser</th><th>strPassword</th></thead><tbody><tr><td>&lt;strUser&gt;</td><td>&lt;strPassword&gt;</td></tr></tbody></table><br>When she search for the course on the choucair academy platform<br><table class='embedded'><tbody><tr><td>strCourse</td></tr><tr><td>&lt;strCourse&gt;</td></tr></tbody></table><br>Then she finds the course called<br><table class='embedded'><tbody><tr><td>strCourse</td></tr><tr><td>&lt;strCourse&gt;</td></tr></tbody></table></div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such window exception: no such window: target window already closed</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchWindowException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.choucair.certification.proyectobasepaola.tasks.Search.performAs(Search.java:25)<br />co.com.choucair.certification.proyectobasepaola.stepdefinitions.ChoucairAcademyStepDefinitions.sheSearchForTheCourseOnTheChoucairAcademyPlatform(ChoucairAcademyStepDefinitions.java:33)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="5cc90e6280ecf7ae048e1351c9da88a345af539314456c02bfbfc7023e6d06cc.png" title=" Example: {strUser=rpenaa, strPassword=Febrero.2020, strCourse=Metodologia Bancolombia}" width="1366"/>
-                <img src="5cc90e6280ecf7ae048e1351c9da88a345af539314456c02bfbfc7023e6d06cc.png" title=" Given than brandon wants to learn automation at the academy Choucair
+                <img src="5cc90e6280ecf7ae048e1351c9da88a345af539314456c02bfbfc7023e6d06cc.png" title=" Example: {strUser=1028008552, strPassword=Choucair2021*, strCourse=Metodologia Bancolombia}" width="1366"/>
+                <img src="5cc90e6280ecf7ae048e1351c9da88a345af539314456c02bfbfc7023e6d06cc.png" title=" Given than Paola wants to learn automation at the academy Choucair
 | strUser | strPassword |
-| rpenaa | Febrero.2020 |" width="1366"/>
+| 1028008552 | Choucair2021* |" width="1366"/>
                 <img src="5cc90e6280ecf7ae048e1351c9da88a345af539314456c02bfbfc7023e6d06cc.png" title=" Paola openup" width="1366"/>
                 <img src="5cc90e6280ecf7ae048e1351c9da88a345af539314456c02bfbfc7023e6d06cc.png" title=" Paola opens the Choucair academy page" width="1366"/>
                 <img src="5cc90e6280ecf7ae048e1351c9da88a345af539314456c02bfbfc7023e6d06cc.png" title=" Paola openup (completed)" width="1366"/>
-                <img src="46db86bcb4d2b671e7e61decb719759750871ac43636d990d710e97bf4d44333.png" title=" Paola login" width="1366"/>
-                <img src="46db86bcb4d2b671e7e61decb719759750871ac43636d990d710e97bf4d44333.png" title=" Paola clicks on button that shows us the form to login" width="1366"/>
-                <img src="8b1916c44c5f56fc69e1e6986a856e32321b8ecdac5307a582282ebcd94eec01.png" title=" Paola enters 'rpenaa' into Where do we write the user" width="1366"/>
-                <img src="9679b712b95bb82a12148bc906226ab9f2df97204274c5f784f5f5b11bd95da8.png" title=" Paola enters 'Febrero.2020' into Where do we write the password" width="1366"/>
+                <img src="a00614697810d79c65c4d3cd1c659f9427e113abc522ced5372e20959e1c7186.png" title=" Paola login" width="1366"/>
+                <img src="a00614697810d79c65c4d3cd1c659f9427e113abc522ced5372e20959e1c7186.png" title=" Paola clicks on button that shows us the form to login" width="1366"/>
+                <img src="e40fd78f978bcc3fa938a5104b761983b976eb078c6d307e2e275c6f1df2bdc3.png" title=" Paola enters '1028008552' into Where do we write the user" width="1366"/>
+                <img src="3b1f08964c757ab87db7a6ea776bde55ecd999ed941d9bdf9ab97839cc400a43.png" title=" Paola enters 'Choucair2021*' into Where do we write the password" width="1366"/>
                 <img src="6c54299bf804b5a32e8146e5b18f807a3d4b567847529ca228274d1cba4fa549.png" title=" Paola clicks on button to confirm login" width="1366"/>
                 <img src="6c54299bf804b5a32e8146e5b18f807a3d4b567847529ca228274d1cba4fa549.png" title=" Paola login (completed)" width="1366"/>
-                <img src="6c54299bf804b5a32e8146e5b18f807a3d4b567847529ca228274d1cba4fa549.png" title=" Given than brandon wants to learn automation at the academy Choucair
+                <img src="6c54299bf804b5a32e8146e5b18f807a3d4b567847529ca228274d1cba4fa549.png" title=" Given than Paola wants to learn automation at the academy Choucair
 | strUser | strPassword |
-| rpenaa | Febrero.2020 | (completed): <span class='pending-color'>PENDING</span>" width="1366"/>
+| 1028008552 | Choucair2021* | (completed): <span class='error-color'>ERROR</span>" width="1366"/>
             </div>
         </div>
 
